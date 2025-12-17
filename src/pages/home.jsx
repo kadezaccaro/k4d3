@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <header>
-        <h1 id="intro-text">
+        <h1 className="header-text">
           I'm Kade, a <strong>Designer</strong> with a passion for{" "}
           <strong>Cybersecurity.</strong>
         </h1>

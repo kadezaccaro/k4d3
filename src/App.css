@@ -45,6 +45,22 @@ a:hover {
   color: var(--dark-tangerine);
 }
 
+button {
+  background: none;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border: 2px solid var(--dark-tangerine);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 2rem;
+  transition: 300ms;
+  text-align: center;
+}
+button:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
 /* || SCROLL BAR */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -117,6 +133,68 @@ a:hover {
 
 strong {
   font-weight: 700;
+}
+
+/* || CONTACT */
+
+.contact-header {
+  max-width: 40rem;
+}
+
+.contact-header p {
+  color: var(--silver-chalice);
+  margin-top: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  /* font-family: "Inter", sans-serif; */
+  font-size: 1.25rem;
+  line-height: 2rem;
+  background-color: var(--dark-gray);
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  border: 2px solid var(--silver-chalice);
+  box-shadow: none;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.submit {
+  padding: 16px;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 100%;
+  transition: 300ms;
+}
+
+.submit:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
 }
 
 /* || FOOTER */
