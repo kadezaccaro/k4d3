@@ -1,3 +1,5 @@
+import { NavLink, Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -16,16 +18,16 @@ const Footer = () => {
           <h3>Navigation</h3>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
-              <a href="#about">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
@@ -35,17 +37,17 @@ const Footer = () => {
           <div className="socialLinks">
             <ul>
               <li>
-                <a href="#github" aria-label="GitHub">
+                <a href="https://www.github.com/" target="_blank">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#instagram" aria-label="Instagram">
+                <a href="https://www.instagram.com/" target="_blank">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="#linkedin" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/" target="_blank">
                   LinkedIn
                 </a>
               </li>

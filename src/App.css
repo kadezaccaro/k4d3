@@ -255,11 +255,22 @@ footer {
 }
 
 .footerSection li {
-  padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
 }
 .footerSection li:last-child {
   border-bottom: none;
+}
+.footerSection li a {
+  display: block;
+  width: 100%; /* Ensure the link covers the entire list item */
+  padding: 0.5rem 0;
+}
+.footerSection li:first-child a {
+  padding-top: 0;
+}
+.footerSection li:last-child a {
+  padding-bottom: 0;
 }
 
 .footerSection a {
