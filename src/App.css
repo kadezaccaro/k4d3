@@ -33,6 +33,13 @@ body {
 header {
   margin: 0 auto;
   max-width: 80rem;
+  padding: 4rem 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--white-smoke);
 }
 
 a {
@@ -57,8 +64,10 @@ button {
   text-align: center;
 }
 button:hover {
-  border: 2px solid white;
-  transform: scale(1.05);
+  transform: scale(1.04);
+}
+button:active {
+  transform: scale(0.96);
 }
 
 /* || SCROLL BAR */
@@ -120,20 +129,50 @@ button:hover {
   display: flex;
   gap: 2rem;
 }
-}
 
 /* || HOME */
-
-#intro-text {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 6.5rem;
-  padding: 4rem 0;
-}
 
 strong {
   font-weight: 700;
 }
+
+section {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+figcaption {
+  margin-top: 1rem;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+figcaption p {
+  margin-top: 0.5rem;
+  color: var(--silver-chalice);
+  line-height: normal;
+  font-family: "Roboto Mono", monospace;
+}
+
 /* || EMAIL CTA */
 
 .cta-container {
@@ -226,7 +265,7 @@ strong {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 40rem;
   margin: 0 auto;
 }
@@ -239,15 +278,10 @@ form {
 
 label {
   font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  font-family: "Roboto Mono", monospace;
-  text-transform: uppercase;
 }
 
 input,
 textarea {
-  /* font-family: "Inter", sans-serif; */
   font-size: 1.25rem;
   line-height: 2rem;
   background-color: var(--dark-gray);
@@ -259,6 +293,14 @@ textarea {
   resize: vertical;
 }
 
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 3px solid #2563eb; /* accessible blue */
+  outline-offset: 2px;
+}
+
 .submit {
   padding: 16px;
   border-radius: 0.5rem;
@@ -267,11 +309,6 @@ textarea {
   font-weight: 400;
   width: 100%;
   transition: 300ms;
-}
-
-.submit:hover {
-  border: 2px solid white;
-  transform: scale(1.05);
 }
 
 /* || FOOTER */
@@ -293,7 +330,7 @@ footer {
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1.8fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -328,7 +365,6 @@ footer {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .footerSection li {
@@ -339,7 +375,10 @@ footer {
   border-bottom: none;
 }
 .footerSection li a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: block; */
   width: 100%; /* Ensure the link covers the entire list item */
   padding: 0.5rem 0;
 }
@@ -367,6 +406,8 @@ footer {
 
 /* Footer Bottom */
 .footerBottom {
+  display: flex;
+  justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
   padding-top: 1.5rem;

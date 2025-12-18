@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="home-container">
+    <>
       <header>
         <h1 className="header-text">
           I'm Kade, a <strong>Designer</strong> with a passion for{" "}
@@ -31,10 +31,91 @@ const Home = () => {
       </section>
 
       <section className="projects">
-        <h2>Featured Projects</h2>
-        <p>Coming soon...</p>
+        <header>
+          <h1 className="header-text">Projects</h1>
+        </header>
+
+        <div className="project-grid-container">
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/500"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/500"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/500"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/300"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/300"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+
+          <article className="grid-item">
+            <figure>
+              <img
+                src="https://picsum.photos/400/300"
+                alt="Random placeholder"
+              />
+            </figure>
+            <figcaption>
+              <h3>Secure Network Design</h3>
+              <p>Design and implementation of a secure network architecture.</p>
+            </figcaption>
+          </article>
+        </div>
       </section>
-    </div>
+    </>
   );
 };
 
