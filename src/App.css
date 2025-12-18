@@ -134,6 +134,83 @@ button:hover {
 strong {
   font-weight: 700;
 }
+/* || EMAIL CTA */
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+  /* Gradient border */
+  background: linear-gradient(to right, var(--dark-gray), var(--nero-gray))
+      padding-box,
+    linear-gradient(to right, var(--white), var(--dim-gray)) border-box;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+}
+
+.cta-text {
+  text-align: center;
+}
+.cta-text p {
+  font-size: 1rem;
+  line-height: normal;
+  margin-top: 0.5rem;
+  color: var(--silver-chalice);
+}
+.cta-text h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: normal;
+}
+
+.email-button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid var(--dark-tangerine);
+}
+.email-button:hover {
+  transform: scale(1.04);
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltip-text {
+  visibility: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: black;
+  color: var(--white);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 4px;
+  position: absolute;
+  z-index: 1;
+  width: 96px;
+  bottom: 100%;
+  left: 48%;
+  margin-left: -48px; /* Use half of the width to center the tooltip */
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
 
 /* || CONTACT */
 
